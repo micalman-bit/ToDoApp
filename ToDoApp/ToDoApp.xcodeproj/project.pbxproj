@@ -16,6 +16,8 @@
 		C487196C271720D70067EF17 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487196B271720D70067EF17 /* ToDoAppTests.swift */; };
 		C4871976271720D70067EF17 /* ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4871975271720D70067EF17 /* ToDoAppUITests.swift */; };
 		C4871978271720D70067EF17 /* ToDoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4871977271720D70067EF17 /* ToDoAppUITestsLaunchTests.swift */; };
+		C487198A2717249C0067EF17 /* TaskTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48719892717249C0067EF17 /* TaskTest.swift */; };
+		C487198C2717256B0067EF17 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487198B2717256B0067EF17 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C4871971271720D70067EF17 /* ToDoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4871975271720D70067EF17 /* ToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITests.swift; sourceTree = "<group>"; };
 		C4871977271720D70067EF17 /* ToDoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C48719892717249C0067EF17 /* TaskTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTest.swift; sourceTree = "<group>"; };
+		C487198B2717256B0067EF17 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,10 @@
 		C4871953271720D40067EF17 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				C4871954271720D40067EF17 /* AppDelegate.swift */,
-				C4871956271720D40067EF17 /* SceneDelegate.swift */,
-				C4871958271720D40067EF17 /* ViewController.swift */,
-				C487195A271720D40067EF17 /* Main.storyboard */,
-				C487195D271720D70067EF17 /* Assets.xcassets */,
-				C487195F271720D70067EF17 /* LaunchScreen.storyboard */,
-				C4871962271720D70067EF17 /* Info.plist */,
+				C4871986271721AD0067EF17 /* Controller */,
+				C4871985271721A60067EF17 /* View */,
+				C48719842717219B0067EF17 /* Model */,
+				C4871987271721F80067EF17 /* Supporting files */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -114,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C487196B271720D70067EF17 /* ToDoAppTests.swift */,
+				C48719882717246E0067EF17 /* Model  */,
 			);
 			path = ToDoAppTests;
 			sourceTree = "<group>";
@@ -125,6 +127,50 @@
 				C4871977271720D70067EF17 /* ToDoAppUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		C48719842717219B0067EF17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C487198B2717256B0067EF17 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4871985271721A60067EF17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4871986271721AD0067EF17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4871958271720D40067EF17 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4871987271721F80067EF17 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C4871954271720D40067EF17 /* AppDelegate.swift */,
+				C4871956271720D40067EF17 /* SceneDelegate.swift */,
+				C487195A271720D40067EF17 /* Main.storyboard */,
+				C487195D271720D70067EF17 /* Assets.xcassets */,
+				C487195F271720D70067EF17 /* LaunchScreen.storyboard */,
+				C4871962271720D70067EF17 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		C48719882717246E0067EF17 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				C48719892717249C0067EF17 /* TaskTest.swift */,
+			);
+			path = "Model ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C487198C2717256B0067EF17 /* Task.swift in Sources */,
 				C4871959271720D40067EF17 /* ViewController.swift in Sources */,
 				C4871955271720D40067EF17 /* AppDelegate.swift in Sources */,
 				C4871957271720D40067EF17 /* SceneDelegate.swift in Sources */,
@@ -268,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C487198A2717249C0067EF17 /* TaskTest.swift in Sources */,
 				C487196C271720D70067EF17 /* ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,11 +485,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8Z8DH5LT2N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_FILE = "ToDoApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -454,6 +504,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Samchenko.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,11 +516,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8Z8DH5LT2N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_FILE = "ToDoApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,6 +535,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Samchenko.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
